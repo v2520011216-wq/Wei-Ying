@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Plus Jakarta Sans', 'Noto Sans TC', system-ui, -apple-system, sans-serif;
+    color: #1c1917;
+    background-color: #fafaf9;
+  }
+}
+
+.font-serif-academic {
+  font-family: 'Noto Serif TC', Georgia, Cambria, serif;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .print-page-break {
+    page-break-after: always;
+  }
+  .shadow-sm, .shadow-md, .shadow-lg, .shadow-xl {
+    box-shadow: none !important;
+  }
+  .border {
+    border-color: #e5e5e5 !important;
+  }
+}
+
